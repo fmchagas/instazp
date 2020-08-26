@@ -2,7 +2,9 @@ package br.com.fmchagas.intazp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+@EnableJpaRepositories(enableDefaultTransactions = false)
 @SpringBootApplication
 public class IntazpApplication {
 

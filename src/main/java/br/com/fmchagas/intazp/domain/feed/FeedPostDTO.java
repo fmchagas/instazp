@@ -3,25 +3,25 @@ package br.com.fmchagas.intazp.domain.feed;
 import br.com.fmchagas.intazp.domain.post.Post;
 
 public class FeedPostDTO {
-	private String name;
+	private String userName;
 	private String linkImageMoment;
 	private String content;
 
 	
 	public FeedPostDTO(Post post) {
-		name = post.getUser().getName();
+		userName = post.getUser().getUserName();
 		linkImageMoment = post.getLinkImageMoment();
 		content = post.getContent();
 	}
 
 
-	public String getName() {
-		return name;
+	public String getUserName() {
+		return userName;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 

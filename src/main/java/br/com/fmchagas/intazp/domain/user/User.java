@@ -16,14 +16,18 @@ public class User {
 	
 	private @NotBlank @Email @Size(max = 255) String email;
 	private @NotBlank @Size(max = 80) String name;
+	@NotBlank
+	@Size(max = 30)
+	private String userName;
 	
 	@Deprecated
 	public User() {
 	}
 
-	public User(@NotBlank @Email @Size(max = 255) String email, @NotBlank @Size(max = 80) String name) {
+	public User(@NotBlank @Email @Size(max = 255) String email, @NotBlank @Size(max = 80) String name, @NotBlank @Size(max = 30) String userName) {
 		this.email = email;
 		this.name = name;
+		this.userName = userName;
 	}
 	
 	public String getEmail() {
@@ -31,5 +35,8 @@ public class User {
 	}
 	public String getName() {
 		return name;
+	}
+	public String getUserName() {
+		return userName;
 	}
 }

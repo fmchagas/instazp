@@ -28,7 +28,7 @@ public class CrudUserController {
 	
 	@InitBinder("newUserForm")
 	public void init(WebDataBinder dataBinder) {
-		dataBinder.addValidators(new UniqueEmailValidator(userRepository));
+		dataBinder.addValidators(new UniqueEmailValidator(userRepository), new UniqueUserNameValidator(userRepository));
 	}
 	
 	@PostMapping

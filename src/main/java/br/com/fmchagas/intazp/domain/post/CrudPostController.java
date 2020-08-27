@@ -1,13 +1,12 @@
 package br.com.fmchagas.intazp.domain.post;
 
-import java.util.Optional;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -39,8 +38,11 @@ public class CrudPostController {
 
 	@PutMapping("/{postId}")
 	@Transactional
-	public void update(@Validated @PathVariable Long postId, UpdatePostForm form) {
-
+	public ResponseEntity<Void> update(@Validated @PathVariable Long postId, UpdatePostForm form) {
+		if(!postRepository.existsById(postId)) {
+			return ResponseEntity.notFound().build();
+		}
+		
 		Post post = postRepository.findById(postId).get();
 
 		User user = userRepository.findById(post.getId()).get();
@@ -48,6 +50,20 @@ public class CrudPostController {
 		updatePost.setId(postId);
 
 		postRepository.save(updatePost);
+		
+		return ResponseEntity.ok().build();
+	}
+	
+	@DeleteMapping("/{postId}")
+	@Transactional
+	public ResponseEntity<Void> remover(@PathVariable Long postId){
+		if(!postRepository.existsById(postId)) {
+			return ResponseEntity.notFound().build();
+		}
+		
+		postRepository.deleteById(postId);
+		
+		return ResponseEntity.noContent().build();
 	}
 
 }

@@ -41,11 +41,11 @@ public class Post {
 	public Long getId() {
 		return Id;
 	}
-	public void setId(Long id) {
-		Id = id;
-	}
 	public String getContent() {
 		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 	public String getLinkImageMoment() {
 		return linkImageMoment;

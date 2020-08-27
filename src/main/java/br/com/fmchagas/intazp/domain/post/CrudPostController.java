@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fmchagas.intazp.domain.user.User;
 import br.com.fmchagas.intazp.domain.user.UserRepository;
 
 @RestController
@@ -44,12 +43,9 @@ public class CrudPostController {
 		}
 		
 		Post post = postRepository.findById(postId).get();
+		post.setContent(form.getContent());
 
-		User user = userRepository.findById(post.getId()).get();
-		Post updatePost = new Post(form.getContent(), user, post.getLinkImageMoment());
-		updatePost.setId(postId);
-
-		postRepository.save(updatePost);
+		postRepository.save(post);
 		
 		return ResponseEntity.ok().build();
 	}

@@ -23,11 +23,18 @@ public class Comment {
 	private @NotNull User user;
 	@ManyToOne
 	private @NotNull Post post;
-
+	
+	@Deprecated
+	public Comment() {
+	}
+	
 	public Comment(@NotBlank @Size(max = 200) String content, @NotNull User user, @NotNull Post post) {
 		this.content = content;
 		this.user = user;
 		this.post = post;
 	}
-
+	
+	public String getContent() {
+		return content;
+	}
 }

@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.user;
+package br.com.fmchagas.instazp.domain.user;
 
 public class UserProfileDTO {
 

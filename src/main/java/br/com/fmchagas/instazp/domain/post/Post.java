@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post;
+package br.com.fmchagas.instazp.domain.post;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,8 +15,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.URL;
 
-import br.com.fmchagas.intazp.domain.post.comment.Comment;
-import br.com.fmchagas.intazp.domain.user.User;
+import br.com.fmchagas.instazp.domain.post.comment.Comment;
+import br.com.fmchagas.instazp.domain.user.User;
 
 @Entity
 public class Post {

@@ -4,13 +4,13 @@ InstaZp é um MVP(Produto Viável Mínimo) de rede social desenvovido para você
 ## Começando
 Para executar o projeto, será necessário instalar os seguintes programas:
 * Java 1.8
-* Uma IDE(eclipse com STS)
 * MySQL
 
 ##Observação
 * Projeto usa ecossistema Spring
 
 ## Desenvolvimento
+* Uma IDE(eclipse com STS)
 Para iniciar o desenvolvimento, é necessário clonar o projeto do GitHub num diretório:
 ```shell
 cd "<seu diretório>"
@@ -21,6 +21,9 @@ git clone https://github.com/fmchagas/instazp.git
 ```shell
 cd "<diretório raiz da aplicação>"
 ./mvnw spring-boot:run
-
-Abra o navegador e digite: http://localhost:8080/swagger-ui.html
+```
+# Documentação
+Abra o navegador e digite:
+```shell
+http://localhost:8080/swagger-ui.html
 ```

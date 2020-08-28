@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post.comment;
+package br.com.fmchagas.instazp.domain.post.comment;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -6,10 +6,10 @@ import javax.validation.constraints.Size;
 
 import org.springframework.util.Assert;
 
-import br.com.fmchagas.intazp.domain.post.Post;
-import br.com.fmchagas.intazp.domain.post.PostRepository;
-import br.com.fmchagas.intazp.domain.user.User;
-import br.com.fmchagas.intazp.domain.user.UserRepository;
+import br.com.fmchagas.instazp.domain.post.Post;
+import br.com.fmchagas.instazp.domain.post.PostRepository;
+import br.com.fmchagas.instazp.domain.user.User;
+import br.com.fmchagas.instazp.domain.user.UserRepository;
 
 public class NewCommentForm {
 	

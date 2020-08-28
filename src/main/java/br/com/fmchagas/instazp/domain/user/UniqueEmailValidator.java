@@ -1,15 +1,15 @@
-package br.com.fmchagas.intazp.domain.user;
+package br.com.fmchagas.instazp.domain.user;
 
 import java.util.Optional;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-public class UniqueUserNameValidator implements Validator {
+public class UniqueEmailValidator implements Validator {
 
 	private UserRepository userRepository;
 
-	public UniqueUserNameValidator(UserRepository userRepository) {
+	public UniqueEmailValidator(UserRepository userRepository) {
 		this.userRepository = userRepository;
 	}
 
@@ -21,16 +21,16 @@ public class UniqueUserNameValidator implements Validator {
 	@Override
 	public void validate(Object target, Errors errors) {
 		NewUserForm form = (NewUserForm) target;
-		String userName = form.getUserName();
-		Optional<User> possibleUser = userRepository.findByUserName(userName);
+		String email = form.getEmail();
+		Optional<User> possibleUser = userRepository.findByEmail(email);
 		
 		if (possibleUser.isPresent()) {
 			StringBuilder sb = new StringBuilder();
-			sb.append("Já existe um usuário com User Name: ")
-			.append(userName)
+			sb.append("Já existe um usuário com e-mail: ")
+			.append(email)
 			.append(" cadastado no sistema!");
 			
-			errors.rejectValue("userName", null, sb.toString());
+			errors.rejectValue("email", null, sb.toString());
 		}
 	}
 

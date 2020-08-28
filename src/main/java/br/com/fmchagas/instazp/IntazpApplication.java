@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp;
+package br.com.fmchagas.instazp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

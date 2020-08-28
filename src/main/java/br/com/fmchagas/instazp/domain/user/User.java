@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.user;
+package br.com.fmchagas.instazp.domain.user;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

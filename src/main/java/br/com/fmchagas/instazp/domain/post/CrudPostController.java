@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post;
+package br.com.fmchagas.instazp.domain.post;
 
 import javax.transaction.Transactional;
 
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fmchagas.intazp.domain.user.UserRepository;
+import br.com.fmchagas.instazp.domain.user.UserRepository;
 
 @RestController
 @RequestMapping("/api/posts")

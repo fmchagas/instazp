@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.feed;
+package br.com.fmchagas.instazp.domain.feed;
 
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fmchagas.intazp.domain.post.PostRepository;
+import br.com.fmchagas.instazp.domain.post.PostRepository;
 
 @RestController
 @RequestMapping("/api/feed")

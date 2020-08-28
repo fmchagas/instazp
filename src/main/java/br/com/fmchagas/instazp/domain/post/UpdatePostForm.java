@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post;
+package br.com.fmchagas.instazp.domain.post;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;

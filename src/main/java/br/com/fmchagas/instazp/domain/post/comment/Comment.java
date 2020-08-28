@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post.comment;
+package br.com.fmchagas.instazp.domain.post.comment;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,8 +9,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import br.com.fmchagas.intazp.domain.post.Post;
-import br.com.fmchagas.intazp.domain.user.User;
+import br.com.fmchagas.instazp.domain.post.Post;
+import br.com.fmchagas.instazp.domain.user.User;
 
 @Entity
 public class Comment {

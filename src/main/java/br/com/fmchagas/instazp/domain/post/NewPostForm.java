@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post;
+package br.com.fmchagas.instazp.domain.post;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -6,8 +6,8 @@ import javax.validation.constraints.Size;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import br.com.fmchagas.intazp.domain.user.User;
-import br.com.fmchagas.intazp.domain.user.UserRepository;
+import br.com.fmchagas.instazp.domain.user.User;
+import br.com.fmchagas.instazp.domain.user.UserRepository;
 
 public class NewPostForm {
 	@NotBlank

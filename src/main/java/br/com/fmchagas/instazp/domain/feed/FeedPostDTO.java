@@ -1,9 +1,9 @@
-package br.com.fmchagas.intazp.domain.feed;
+package br.com.fmchagas.instazp.domain.feed;
 
 import java.util.List;
 
-import br.com.fmchagas.intazp.domain.post.Post;
-import br.com.fmchagas.intazp.domain.post.comment.Comment;
+import br.com.fmchagas.instazp.domain.post.Post;
+import br.com.fmchagas.instazp.domain.post.comment.Comment;
 
 public class FeedPostDTO {
 	private String userName;

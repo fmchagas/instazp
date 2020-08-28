@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post.comment;
+package br.com.fmchagas.instazp.domain.post.comment;
 
 import javax.transaction.Transactional;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.fmchagas.intazp.domain.post.PostRepository;
-import br.com.fmchagas.intazp.domain.user.UserRepository;
+import br.com.fmchagas.instazp.domain.post.PostRepository;
+import br.com.fmchagas.instazp.domain.user.UserRepository;
 
 @RestController
 @RequestMapping("/api/posts/{postId}/comments")

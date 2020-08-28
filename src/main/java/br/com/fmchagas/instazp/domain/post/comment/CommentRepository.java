@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.domain.post.comment;
+package br.com.fmchagas.instazp.domain.post.comment;
 
 import org.springframework.data.repository.CrudRepository;
 

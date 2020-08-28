@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.fmchagas</groupId>
-	<artifactId>intazp</artifactId>
+	<artifactId>isntazp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>intazp</name>
+	<name>isntazp</name>
 	<description>MVP demostração do InstaZp</description>
 
 	<properties>

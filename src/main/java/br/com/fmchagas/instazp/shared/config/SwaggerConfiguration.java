@@ -1,4 +1,4 @@
-package br.com.fmchagas.intazp.shared.config;
+package br.com.fmchagas.instazp.shared.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class SwaggerConfiguration {
 	
 	@Bean
 	public Docket api() {
-		Predicate<RequestHandler> basePackage = RequestHandlerSelectors.basePackage("br.com.fmchagas.intazp");
+		Predicate<RequestHandler> basePackage = RequestHandlerSelectors.basePackage("br.com.fmchagas.instazp");
 		Predicate<String> apiUrls = PathSelectors.ant("/api/**");
 		return new Docket(DocumentationType.SWAGGER_2).select().apis(basePackage)
 				.paths(apiUrls).build();
